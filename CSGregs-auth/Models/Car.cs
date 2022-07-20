@@ -1,24 +1,9 @@
-
-using System;
-using System.ComponentModel.DataAnnotations;
-
 namespace CSGregs.Models
 {
     public class Car
     {
-        public Car(string make, string model, string imgUrl, int year, int price, string description, string color)
-        {
-            Id = Guid.NewGuid().ToString(); 
-            Make = make;
-            Model = model;
-            ImgUrl = imgUrl;
-            Year = year;
-            Price = price;
-            Description = description;
-            Color = color;
-
-        }
-         public string Id { get; set; }
+        
+         public int Id { get; set; }
          public string Make { get; set; }
          public string Model { get; set; }
          public string ImgUrl { get; set; }

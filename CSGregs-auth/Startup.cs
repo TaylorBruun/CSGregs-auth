@@ -38,8 +38,11 @@ namespace CSGregsAuth
         services.AddScoped<AccountsRepository>();
         services.AddScoped<AccountService>();
 
+        services.AddTransient<CarsRepository>();
         services.AddTransient<CarsService>();
-        services.AddTransient<HousesService>();
+
+
+        // services.AddTransient<HousesService>();
     }
 
     private void ConfigureCors(IServiceCollection services)
