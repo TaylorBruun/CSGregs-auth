@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-
-namespace CSGregs-auth.Models
+namespace CSGregsAuth.Models
 {
     public class Account
     {

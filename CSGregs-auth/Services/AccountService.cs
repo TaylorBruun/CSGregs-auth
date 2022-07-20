@@ -1,7 +1,7 @@
-using CSGregs-auth.Models;
-using CSGregs-auth.Repositories;
+using CSGregsAuth.Models;
+using CSGregsAuth.Repositories;
 
-namespace CSGregs-auth.Services
+namespace CSGregsAuth.Services
 {
     public class AccountService
     {

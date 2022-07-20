@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "CSGregs-auth": {
+    "CSGregsAuth": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

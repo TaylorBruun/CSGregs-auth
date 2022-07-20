@@ -1,8 +1,8 @@
 using System.Data;
-using CSGregs-auth.Models;
+using CSGregsAuth.Models;
 using Dapper;
 
-namespace CSGregs-auth.Repositories
+namespace CSGregsAuth.Repositories
 {
     public class AccountsRepository
     {

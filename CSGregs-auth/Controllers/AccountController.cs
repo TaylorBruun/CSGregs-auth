@@ -1,13 +1,12 @@
 using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using CSGregs-auth.Models;
-using CSGregs-auth.Services;
+using CSGregsAuth.Models;
+using CSGregsAuth.Services;
 using CodeWorks.Auth0Provider;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CSGregs-auth.Controllers
+namespace CSGregsAuth.Controllers
 {
     [ApiController]
     [Route("[controller]")]
