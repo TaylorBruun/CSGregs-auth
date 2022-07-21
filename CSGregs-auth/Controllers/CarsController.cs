@@ -31,19 +31,19 @@ namespace CSGregs.Controllers
             }
         }
 
-        // [HttpGet("{id}")]
-        // public ActionResult<Car> Get(string id)
-        // {
-        //     try
-        //     {
-        //         Car car = _carsService.Get(id);
-        //         return Ok(car);
-        //     }
-        //     catch (System.Exception exception)
-        //     {
-        //         return BadRequest(exception.Message);
-        //     }
-        // }
+        [HttpGet("{id}")]
+        public ActionResult<Car> Get(int id)
+        {
+            try
+            {
+                Car car = _carsService.Get(id);
+                return Ok(car);
+            }
+            catch (System.Exception exception)
+            {
+                return BadRequest(exception.Message);
+            }
+        }
 
         [HttpPost]
         public ActionResult<Car> Create([FromBody] Car carData)
@@ -59,32 +59,33 @@ namespace CSGregs.Controllers
             }
         }
 
-        // [HttpPut("{id}")]
-        // public ActionResult<Car> Edit(int id, [FromBody] Car carData)
-        // {
-        //     try
-        //     {
-        //         Car editedCar = _carsService.Edit(carData);
-        //         return Ok(editedCar);
-        //     }
-        //     catch (System.Exception exception)
-        //     {
-        //         return BadRequest(exception.Message);
-        //     }
-        // }
+        [HttpPut("{id}")]
+        public ActionResult<Car> Edit(int id, [FromBody] Car carData)
+        {
+            try
+            {
+                carData.Id = id;
+                Car editedCar = _carsService.Edit(carData);
+                return Ok(editedCar);
+            }
+            catch (System.Exception exception)
+            {
+                return BadRequest(exception.Message);
+            }
+        }
 
-        // [HttpDelete("{id}")]
-        // public ActionResult<Car> Delete(string id)
-        // {
-        //     try
-        //     {
-        //         Car deletedCar = _carsService.Delete(id);
-        //         return Ok(deletedCar);
-        //     }
-        //     catch (System.Exception exception)
-        //     {
-        //         return BadRequest(exception.Message);
-        //     }
-        // }
+        [HttpDelete("{id}")]
+        public ActionResult<Car> Delete(int id)
+        {
+            try
+            {
+                Car deletedCar = _carsService.Delete(id);
+                return Ok(deletedCar);
+            }
+            catch (System.Exception exception)
+            {
+                return BadRequest(exception.Message);
+            }
+        }
     }
 }
